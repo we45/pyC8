@@ -612,27 +612,27 @@ class C8Client(object):
         return resp
 
     # client.insert_document_from_file()
-    def insert_document_from_file(self, collection_name, csv_filepath, return_new=False, sync=None,
-                                  silent=False):
-        """Insert a documents from csv file.
+    # def insert_document_from_file(self, collection_name, csv_filepath, return_new=False, sync=None,
+    #                               silent=False):
+    #     """Insert a documents from csv file.
 
-        :param csv_filepath: CSV file path which contains documents
-        :type csv_filepath: str
-        :param return_new: Include body of the new document in the returned
-            metadata. Ignored if parameter **silent** is set to True.
-        :type return_new: bool
-        :param sync: Block until operation is synchronized to disk.
-        :type sync: bool
-        :param silent: If set to True, no document metadata is returned. This
-            can be used to save resources.
-        :type silent: bool
-        :returns: Document metadata (e.g. document key, revision) or True if
-            parameter **silent** was set to True.
-        """
-        _collection = self.get_collection(collection_name)
-        resp = _collection.insert_from_file(csv_filepath=csv_filepath, return_new=return_new,
-                                            sync=sync, silent=silent)
-        return resp
+    #     :param csv_filepath: CSV file path which contains documents
+    #     :type csv_filepath: str
+    #     :param return_new: Include body of the new document in the returned
+    #         metadata. Ignored if parameter **silent** is set to True.
+    #     :type return_new: bool
+    #     :param sync: Block until operation is synchronized to disk.
+    #     :type sync: bool
+    #     :param silent: If set to True, no document metadata is returned. This
+    #         can be used to save resources.
+    #     :type silent: bool
+    #     :returns: Document metadata (e.g. document key, revision) or True if
+    #         parameter **silent** was set to True.
+    #     """
+    #     _collection = self.get_collection(collection_name)
+    #     resp = _collection.insert_from_file(csv_filepath=csv_filepath, return_new=return_new,
+    #                                         sync=sync, silent=silent)
+    #     return resp
 
     # client.update_document
 
